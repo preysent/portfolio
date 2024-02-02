@@ -5,50 +5,198 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio web</title>
+  <link rel="stylesheet" href="utils.css">
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="loco.css">
 </head>
 
 <body>
 
-  <div id="main" class="bg-light min-h-screen font-rubik relative">
-    <header class="p-8 flex absolute top-0 left-0 w-full">
-      <div class="uppercase font-serif text-xl mr-auto leading-[1]">
-         <h5>praveen</h5>
-         <h5>parihar</h5>
+  <div id="main" class="bg-slate-100 min-h-screen font-rubik relative">
+    <header class="p-8 flex absolute top-0 left-0 z-10 w-full">
+      <div class="uppercase font-serif text-xl mr-auto leading-[1] cursor-pointer">
+        <h5>praveen</h5>
+        <h5>parihar</h5>
       </div>
 
-      <nav class="gap-3">
-        <h6 class="cursor-pointer capitalize">home</h6>
+      <nav class="gap-3 text-lg">
+        <h6 class="cursor-pointer capitalize">services</h6>
         <h6 class="cursor-pointer capitalize">projects</h6>
         <h6 class="cursor-pointer capitalize">about</h6>
         <h6 class="cursor-pointer capitalize">contact</h6>
       </nav>
     </header>
 
-    <div id="home" class="container mx-auto min-h-screen flex justify-center items-center">
-      <div class="text-[6vw] leading-[.9] font-poppins font-semibold uppercase tracking-tight">
+    <div data-scroll id="home"
+      class="container relative mx-auto min-h-screen flex justify-center items-center overflow-hidden">
 
-        <h2>Web Developer  bringing</h2>
-        <h2>ideas to life through code</h2>
+      <div data-scroll data-scroll-speed="-11" id="hero-obj"
+        class="absolute  w-[60vh] h-[60vh]  rounded-full bg-gradient-to-b from-black to-transparent"></div>
 
-        <!-- <h2>
-          i'm praveen
-        </h2> -->
+      <div id="hero-obj"
+        class="absolute w-[6vh] h-[90vh]  rounded rotate-[15deg] z-[1] bg-gradient-to-r from-black to-white transition-all ease-out ">
+      </div>
+
+      <div data-scroll data-scroll-speed="-4"
+        class="c-heading-1 leading-[.9] font-poppins font-semibold uppercase tracking-tight text-center w-fit bg-blend-difference">
+
+        <h2 class="mx-auto" text="passionate">passionate</h2>
+        <h2 class="mx-auto md:translate-x-[-6rem]" text="Front-end">Front-end</h2>
+        <h2 class="mx-auto" text="Web Developer">Web Developer</h2>
+
       </div>
     </div>
 
+    <div class=" min-h-screen bg-black rounded-3xl w-full text-slate-200">
 
-    <div id="projects" class="min-h-screen bg-gray-200">
-    </div>
+      <div id="projects" class=" min-h-screen container  py-16  mx-auto p-8">
+        <h2 class="c-heading-1 leading-[.9] font-poppins font-semibold capitalize tracking-tight ">
+          Some
+          projects</h2>
+        <div class="grid grid-cols-12 gap-10 py-10">
 
-    <div id="about" class="min-h-screen bg-gray-300">
-    </div>
 
-    <div id="contact" class="min-h-screen bg-gray-400">
+
+          <div class="aspect-w-1 aspect-h-1 col-span-7 ">
+            <div class="w-full aspect-square bg-white rounded hover:rounded-xl transition-all overflow-hidden"></div>
+            <div
+              class="w-full capitalize flex flex-col md:flex-row flex-wrap justify-between items-center  mt-3 gap-y-1">
+
+              <h6 class="c-heading-2 font-poppins font-bold inline-block mr-auto">Project Name</h6>
+              <div class="inline-block">
+                <button class=" border  rounded-full px-3 py-1">frontend</button>
+                <button class=" border  rounded-full px-3 py-1">backend</button>
+                <button class=" border  rounded-full px-3 py-1">desighn</button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="aspect-w-1 aspect-h-1 col-span-5 my-auto">
+            <div class="w-full aspect-square bg-white rounded hover:rounded-xl transition-all overflow-hidden"></div>
+            <div
+              class="text-slate-100  w-full capitalize flex flex-col md:flex-row flex-wrap justify-between items-center  mt-3 gap-y-1">
+
+              <h6 class="c-heading-2 font-poppins font-bold mr-auto">Project Name</h6>
+              <div class="">
+                <button class=" border  rounded-full px-3 py-1">frontend</button>
+                <button class=" border  rounded-full px-3 py-1">backend</button>
+                <button class=" border  rounded-full px-3 py-1">desighn</button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="aspect-w-1 aspect-h-1 col-span-5 my-auto">
+            <div class="w-full aspect-square bg-white rounded hover:rounded-xl transition-all overflow-hidden"></div>
+            <div
+              class="text-slate-100  w-full capitalize flex flex-col md:flex-row flex-wrap justify-between items-center  mt-3 gap-y-1">
+
+              <h6 class="c-heading-2 font-poppins font-bold inline-block mr-auto">Project Name</h6>
+              <div class="inline-block">
+                <button class=" border  rounded-full px-3 py-1">frontend</button>
+                <button class=" border  rounded-full px-3 py-1">backend</button>
+                <button class=" border  rounded-full px-3 py-1">desighn</button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="aspect-w-1 aspect-h-1 col-span-7 ">
+            <div class="w-full aspect-square bg-white rounded hover:rounded-xl transition-all overflow-hidden"></div>
+            <div
+              class="text-slate-100  w-full capitalize flex flex-col md:flex-row flex-wrap justify-between items-center  mt-3 gap-y-1">
+
+              <h6 class="c-heading-2 font-poppins font-bold inline-block mr-auto">Project Name</h6>
+              <div class="inline-block">
+                <button class=" border  rounded-full px-3 py-1">frontend</button>
+                <button class=" border  rounded-full px-3 py-1">backend</button>
+                <button class=" border  rounded-full px-3 py-1">desighn</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <div data-scroll id="about" class="min-h-screen container py-16  w-full mx-auto relative grid grid-cols-12 p-8 ">
+
+        <h6 class="c-heading-1 leading-[.9] font-poppins font-semibold capitalize tracking-tight col-span-12">about me
+        </h6>
+        <div class='font-poppins text-3xl tracking-wider text-balance col-span-6 my-auto'>
+          Hi, I'm Praveen,<br>
+
+          I love creating websites that are easy to use and look great. I pay close attention to details and bring my
+          creative touch to each project. Excited to work with clients on web solutions that make a difference
+        </div>
+        <div data-scroll class="w-full mx-auto aspect-[.6] overflow-hidden col-span-6 rounded-md max-w-sm">
+          <img data-scroll data-scroll-speed="-2" src="myImg.jpg" alt="" class="w-full object-cover ">
+        </div>
+
+
+      </div>
+
+      <div data-scroll id="list" class="min-h-screen py-16  w-full mx-auto relative c-heading-2">
+        <div class="line flex gap-4">
+          <div class="line-in inline-flex gap-4">
+            <p class="flex-shrink-0 cursor-pointer">😎 HTML</p>
+            <p class="flex-shrink-0 cursor-pointer">🧐 CSS</p>
+            <p class="flex-shrink-0 cursor-pointer">😍 JavaScript</p>
+            <p class="flex-shrink-0 cursor-pointer">🥱 Tailwind Css</p>
+            <p class="flex-shrink-0 cursor-pointer">😋 React JS</p>
+            <p class="flex-shrink-0 cursor-pointer">🤐 Redux</p>
+            <p class="flex-shrink-0 cursor-pointer">😛 NEXT JS</p>
+            <p class="flex-shrink-0 cursor-pointer">🤠 GitHub</p>
+            <p class="flex-shrink-0 cursor-pointer">🤑 GSAP</p>
+            <p class="flex-shrink-0 cursor-pointer">😧 Node JS</p>
+            <p class="flex-shrink-0 cursor-pointer">🤯 Express JS</p>
+            <p class="flex-shrink-0 cursor-pointer">😶 Git</p>
+          </div>
+
+          <div class="line-in inline-flex gap-4">
+            <p class="flex-shrink-0 cursor-pointer">😎 HTML</p>
+            <p class="flex-shrink-0 cursor-pointer">🧐 CSS</p>
+            <p class="flex-shrink-0 cursor-pointer">😍 JavaScript</p>
+            <p class="flex-shrink-0 cursor-pointer">🥱 Tailwind Css</p>
+            <p class="flex-shrink-0 cursor-pointer">😋 React JS</p>
+            <p class="flex-shrink-0 cursor-pointer">🤐 Redux</p>
+            <p class="flex-shrink-0 cursor-pointer">😛 NEXT JS</p>
+            <p class="flex-shrink-0 cursor-pointer">🤠 GitHub</p>
+            <p class="flex-shrink-0 cursor-pointer">🤑 GSAP</p>
+            <p class="flex-shrink-0 cursor-pointer">😧 Node JS</p>
+            <p class="flex-shrink-0 cursor-pointer">🤯 Express JS</p>
+            <p class="flex-shrink-0 cursor-pointer">😶 Git</p>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
+
+
+  <div id="contact" class=" min-h-screen container py-16  w-full mx-auto relative p-8 ">
+
+    <div class="container">
+      <h3 class="c-heading-1 uppercase font-bold text-center leading-[.8]">let's work togather</h3>
+    </div>
+
+  </div>
+
+
+  </div>
+
+
 
   <script type="module" src="/main.js"></script>
 </body>

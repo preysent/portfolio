@@ -42,3 +42,9 @@ html.has-scroll-smooth {
     .has-scroll-dragging .c-scrollbar_thumb {
       cursor: -webkit-grabbing;
       cursor: grabbing; }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+

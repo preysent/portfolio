@@ -1,5 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins&family=Roboto&family=Rubik&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins&family=Roboto&family=Rubik&display=swap'); */
+
+/* home page ------------------------------ */
+.c-heading-1{
+    width: fit-content;
+    font-size: clamp(50px, 7vw, 5rem);
+    position: relative;
+}
+.c-heading-2{
+    font-size: clamp(25px, 3vw, 2rem);
+    position: relative;
+}
+/* #home h2::before{
+    content: attr(text);
+    color: transparent;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 3; 
+    -webkit-text-stroke: 1px rgb(0, 0, 0);    
+} */
+
+#hero-obj{
+    background-blend-mode: difference;
+    opacity: .1;
+}
 
