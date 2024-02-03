@@ -1,14 +1,14 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins&family=Roboto&family=Rubik&display=swap'); */
 
 /* home page ------------------------------ */
-.c-heading-1{
-    width: fit-content;
-    font-size: clamp(50px, 7vw, 5rem);
-    position: relative;
+.c-heading-1 {
+  width: fit-content;
+  font-size: clamp(50px, 7vw, 5rem);
+  position: relative;
 }
-.c-heading-2{
-    font-size: clamp(25px, 3vw, 2rem);
-    position: relative;
+.c-heading-2 {
+  font-size: clamp(25px, 3vw, 2rem);
+  position: relative;
 }
 /* #home h2::before{
     content: attr(text);
@@ -20,8 +20,26 @@
     -webkit-text-stroke: 1px rgb(0, 0, 0);    
 } */
 
-#hero-obj{
-    background-blend-mode: difference;
-    opacity: .1;
+#hero-obj {
+  background-blend-mode: difference;
+  opacity: 0.1;
 }
 
+.line-l .line-in {
+  animation: line-move-l 18s linear infinite;
+  font-size: clamp(30px, 5vw, 5rem);
+}
+.line-r .line-in {
+  animation: line-move-r 18s linear infinite;
+  font-size: clamp(30px, 5vw, 5rem);
+}
+
+
+@keyframes line-move-r {
+  from {transform: translateX(0%);}
+  to {transform: translateX(100%);}
+}
+@keyframes line-move-l {
+  from {transform: translateX(0%);}
+  to {transform: translateX(-100%);}
+}

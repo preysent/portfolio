@@ -14,11 +14,4 @@ document.querySelector('nav').addEventListener('click',handleNav)
 
 const ob = document.querySelector('#hero-obj')
 
-// window.addEventListener("mousemove",(e)=>{
-//     const x = e.clientX/1- window.innerWidth/2
-//     const y = e.clientY/window.innerHeight*1.5 
-
-//     ob.style.transform=`translate3d(${-x}px,0,0) rotate(15deg) scale(${y})`
-//     console.log(y)
-// })
-
+const line1 = document.querySelector('.line-1')
