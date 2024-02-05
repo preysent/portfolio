@@ -16,7 +16,13 @@ module.exports = {
         'poppins': ['Poppins', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
         'rubik': ['Rubik', 'sans-serif'],
-      }
+      },
+
+      fontSize: {
+        'clamp-1': "clamp(50px, 7vw, 5rem)",
+        'clamp-2': "clamp(25px, 3vw, 2rem)",
+        'clamp-3': "clamp(25px, 10vw, 12rem)",
+      },
 
     },
   },

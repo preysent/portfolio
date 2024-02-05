@@ -1,15 +1,30 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins&family=Roboto&family=Rubik&display=swap'); */
 
+body,
+html {
+  width: 100%;
+  height: 100vh;
+}
 /* home page ------------------------------ */
-.c-heading-1 {
-  width: fit-content;
-  font-size: clamp(50px, 7vw, 5rem);
+.list-i {
   position: relative;
+  transition: all 0.2s ease-out;
 }
-.c-heading-2 {
-  font-size: clamp(25px, 3vw, 2rem);
-  position: relative;
+
+.list-i:hover {
+  transform: translateY(-100%);
 }
+
+.list-i::after {
+  content: attr(text);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+}
+
 /* #home h2::before{
     content: attr(text);
     color: transparent;
@@ -20,11 +35,6 @@
     -webkit-text-stroke: 1px rgb(0, 0, 0);    
 } */
 
-#hero-obj {
-  background-blend-mode: difference;
-  opacity: 0.1;
-}
-
 .line-l .line-in {
   animation: line-move-l 18s linear infinite;
   font-size: clamp(30px, 5vw, 5rem);
@@ -33,13 +43,26 @@
   animation: line-move-r 18s linear infinite;
   font-size: clamp(30px, 5vw, 5rem);
 }
-
+.line-r:hover .line-in {
+  animation-play-state: paused;
+}
+.line-l:hover .line-in {
+  animation-play-state: paused;
+}
 
 @keyframes line-move-r {
-  from {transform: translateX(0%);}
-  to {transform: translateX(100%);}
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
 @keyframes line-move-l {
-  from {transform: translateX(0%);}
-  to {transform: translateX(-100%);}
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
