@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio web</title>
+  <title>Praveen Parihar | Portfolio</title>
   <link rel="stylesheet" href="utils.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="bg-slate-100">
 
   <div id="loder"
     class="absolute w-screen h-screen bg-black text-slate-200 z-50 text-clamp-2 flex justify-center items-center flex-col text-center font-semibold">
@@ -23,10 +23,31 @@
 
   </div>
 
-  <div id="main" class="bg-slate-100 font-rubik relative">
+  <div id="cursorDiv" class="absolute flex justify-center items-center ">
+    <div
+      class="cursor w-4 aspect-square bg-blend-difference bg-black rounded-full absolute transition-transform ease-out duration-200">
+    </div>
+    <div
+      class="cursor w-3 aspect-square bg-blend-difference bg-black rounded-full absolute transition-transform ease-out duration-150">
+    </div>
+    <div
+      class="cursor w-2 aspect-square bg-blend-difference bg-black rounded-full absolute transition-transform ease-out duration-100">
+    </div>
+    <div
+      class="cursor w-1 aspect-square bg-blend-difference bg-black rounded-full absolute transition-transform ease-out duration-75">
+    </div>
+
+  </div>
+
+
+
+
+  <div id="main" class=" font-rubik relative">
+
+
 
     <div data-scroll id="home"
-      class="container relative mx-auto min-h-screen flex justify-center items-center overflow-hidden">
+      class="container relative mx-auto min-h-screen flex justify-center items-center overflow-hidden ">
       <header data-scroll class="p-8 flex absolute top-0 left-0 z-10 w-full">
         <div class="uppercase font-serif text-xl mr-auto leading-[1] cursor-pointer">
           <h5>praveen</h5>
@@ -68,6 +89,18 @@
         </div>
 
       </div>
+
+      <div id="scroll-down-btn"
+        class=" absolute bottom-0 w-full text-center py-3 flex flex-col items-center leading-[1] cursor-pointer">
+        <p>scroll down</p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 aspect-square font-bold" fill="currentColor"
+          class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67" />
+        </svg>
+      </div>
+
+
     </div>
 
     <div data-scroll class=" min-h-screen bg-black rounded-3xl w-full text-slate-200">
@@ -81,21 +114,51 @@
 
 
           <div class="aspect-w-1 w-full aspect-h-1 col-span-12 md:col-span-7 ">
-            <div class="w-full aspect-square bg-white rounded hover:rounded-xl transition-all overflow-hidden">
-              <img src="./assets/ear-zon.png" alt="">
-            </div>
-            <div class="w-full capitalize flex flex-col md:flex-row flex-wrap justify-betwee items-center my-3 gap-y-1">
-
-              <h6 class="text-clamp-2 font-poppins font-bold inline-block md:mr-auto">Earphone Zone</h6>
-              <div class="inline-block">
-                <button class=" border  rounded-full px-3 py-1">NEXT Js</button>
-                <button class=" border  rounded-full px-3 py-1">Full-Stack</button>
-                <button class=" border  rounded-full px-3 py-1 bg-white text-black">
-                  <a href="https://earphone-zone.vercel.app/" target="_blank"> view
-                  </a>
-                </button>
+            <a href="https://earphone-zone.vercel.app/" target="_blank">
+              <div class="w-full aspect-square bg-white rounded hover:rounded-xl transition-all overflow-hidden">
+                <img class="object-cover h-full hover:scale-105 transition duration-500"
+                  src="./assets/earpnone-zone.png" alt="">
               </div>
-            </div>
+              <div
+                class="w-full capitalize flex flex-col md:flex-row flex-wrap justify-betwee items-center my-3 gap-y-1">
+
+                <h6 class="text-clamp-2 font-poppins font-bold inline-block md:mr-auto">Earphone Zone</h6>
+                <div class="inline-block">
+                  <button class=" border  rounded-full px-3 py-1">NEXT Js</button>
+                  <button class=" border  rounded-full px-3 py-1">Full-Stack</button>
+                  <button class=" border  rounded-full px-3 py-1 bg-white text-black">
+                    view
+
+                  </button>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+
+
+          <div class="aspect-w-1 aspect-h-1 col-span-12 md:col-span-5 my-auto ">
+            <a href="https://f13da27d-0789-4a85-a200-2b35716cbf68-00-2641kbhju5kb7.sisko.replit.dev/" target="_blank">
+              <div class="w-full aspect-square bg-white rounded hover:rounded-xl transition-all overflow-hidden ">
+
+                <img class="object-cover h-full hover:scale-105 transition duration-500" src="./assets/Work studio.png"
+                  alt="">
+
+              </div>
+              <div
+                class="text-slate-100  w-full capitalize flex flex-col md:flex-row flex-wrap justify-between items-center my-3 gap-y-1">
+
+                <h6 class="text-clamp-2 font-poppins font-bold md:mr-auto">Works Studio</h6>
+                <div class="">
+                  <button class=" border  rounded-full px-3 py-1">frontend</button>
+                  <button class=" border  rounded-full px-3 py-1 bg-white text-black">
+                    view
+                  </button>
+                </div>
+              </div>
+            </a>
           </div>
 
 
@@ -103,48 +166,24 @@
 
 
           <div class="aspect-w-1 aspect-h-1 col-span-12 md:col-span-5 my-auto">
-            <div class="w-full aspect-square bg-white rounded hover:rounded-xl transition-all overflow-hidden">
-              <div>
-                <img src="./assets/work1.png" alt="">
-                <img src="./assets/work2.png" alt="">
+            <a href="https://splendorous-narwhal-flyzon.netlify.app/" target="_blank">
+              <div class="w-full aspect-square bg-white rounded hover:rounded-xl transition-all overflow-hidden">
+                <img class="object-cover h-full  hover:scale-105 transition duration-500" src="./assets/flyzon.png"
+                  alt="">
               </div>
-            </div>
-            <div
-              class="text-slate-100  w-full capitalize flex flex-col md:flex-row flex-wrap justify-between items-center my-3 gap-y-1">
+              <div
+                class="text-slate-100  w-full capitalize flex flex-col md:flex-row flex-wrap justify-between items-center my-3 gap-y-1">
 
-              <h6 class="text-clamp-2 font-poppins font-bold md:mr-auto">Works Studio</h6>
-              <div class="">
-                <button class=" border  rounded-full px-3 py-1">frontend</button>
-                <button class=" border  rounded-full px-3 py-1 bg-white text-black">
-                  <a href="https://f13da27d-0789-4a85-a200-2b35716cbf68-00-2641kbhju5kb7.sisko.replit.dev/"
-                    target="_blank"> view
-                  </a>
-                </button>
+                <h6 class="text-clamp-2 font-poppins font-bold inline-block md:mr-auto">FlyZon</h6>
+                <div class="inline-block">
+                  <button class=" border  rounded-full px-3 py-1">MERN</button>
+                  <button class=" border  rounded-full px-3 py-1">React Js</button>
+                  <button class=" border  rounded-full px-3 py-1 bg-white text-black">
+                    view
+                  </button>
+                </div>
               </div>
-            </div>
-          </div>
-
-
-
-
-
-          <div class="aspect-w-1 aspect-h-1 col-span-12 md:col-span-5 my-auto">
-            <div class="w-full aspect-square bg-white rounded hover:rounded-xl transition-all overflow-hidden">
-              <img class="object-contain object-center " src="./assets/flyzon.png" alt="">
-            </div>
-            <div
-              class="text-slate-100  w-full capitalize flex flex-col md:flex-row flex-wrap justify-between items-center my-3 gap-y-1">
-
-              <h6 class="text-clamp-2 font-poppins font-bold inline-block md:mr-auto">FlyZon</h6>
-              <div class="inline-block">
-                <button class=" border  rounded-full px-3 py-1">MERN</button>
-                <button class=" border  rounded-full px-3 py-1">React Js</button>
-                <button class=" border  rounded-full px-3 py-1 bg-white text-black">
-                  <a href="https://splendorous-narwhal-flyzon.netlify.app/" target="_blank"> view
-                  </a>
-                </button>
-              </div>
-            </div>
+            </a>
           </div>
 
 
@@ -152,22 +191,24 @@
 
 
           <div class="aspect-w-1 aspect-h-1 col-span-12 md:col-span-7 ">
-            <div class="w-full aspect-square bg-white rounded hover:rounded-xl transition-all overflow-hidden">
-              <img src="./assets/lightrains.png" alt="">
-            </div>
-            <div
-              class="text-slate-100  w-full capitalize flex flex-col md:flex-row flex-wrap justify-between items-center my-3 gap-y-1">
-
-              <h6 class="text-clamp-2 font-poppins font-bold inline-block md:mr-auto">SparkyAI</h6>
-              <div class="inline-block">
-                <button class=" border  rounded-full px-3 py-1">frontend</button>
-                <button class=" border  rounded-full px-3 py-1">design</button>
-                <button class=" border  rounded-full px-3 py-1 bg-white text-black">
-                  <a href="https://lightrains-demo.netlify.app/" target="_blank"> view
-                  </a>
-                </button>
+            <a href="https://lightrains-demo.netlify.app/" target="_blank">
+              <div class="w-full aspect-square bg-white rounded hover:rounded-xl transition-all overflow-hidden">
+                <img class="object-cover h-full  hover:scale-105 transition duration-500" src="./assets/lightrains.png"
+                  alt="">
               </div>
-            </div>
+              <div
+                class="text-slate-100  w-full capitalize flex flex-col md:flex-row flex-wrap justify-between items-center my-3 gap-y-1">
+
+                <h6 class="text-clamp-2 font-poppins font-bold inline-block md:mr-auto">SparkyAI</h6>
+                <div class="inline-block">
+                  <button class=" border  rounded-full px-3 py-1">frontend</button>
+                  <button class=" border  rounded-full px-3 py-1">design</button>
+                  <button class=" border  rounded-full px-3 py-1 bg-white text-black">
+                    view
+                  </button>
+                </div>
+              </div>
+            </a>
           </div>
 
 
@@ -184,7 +225,7 @@
 
         <div data-scroll
           class=" md:hidden w-full mx-auto aspect-[.6] overflow-hidden col-span-12 md:col-span-6 rounded-md max-w-sm">
-          <img data-scroll data-scroll-speed="-2" src="./assets/myImg.jpg" alt="my image" class="w-full object-cover ">
+          <img data-scroll data-scroll-speed="-2" src="myImg.jpg" alt="my image" class="w-full object-cover ">
         </div>
 
         <div class='font-poppins text-3xl tracking-wider text-balance col-span-12 md:col-span-6 my-4'>
@@ -322,32 +363,47 @@
         <h3 class="text-clamp-3 uppercase font-bold tracking-tight leading-[.8] mx-auto">Let's Connect
         </h3>
 
-        <div id="play-box" class="flex-grow p-3 bg-ed-400 flex items-center">
-          <div class="text-clamp-2 font-semibold bg-bue-400 w-1/2 ml-auto">
+        <div id="play-box" class="flex-grow p-3 bg-ed-400 flex items-center ">
+          <div class="text-clamp-2 font-semibold bg-bue-400 w-full md:w-1/2 ml-auto ">
 
             <a href="https://www.linkedin.com/in/praveen-parihar-id" target="_blank">
-              <div class="border-b border-black p-1 overflow-hidden">
-                <p text="Linkedin " class="list-i">Linkedin</p>
+
+              <div class="border-b border-black p-1 overflow-hidden flex items-center gap-2">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 aspect-square" fill="currentColor"
+                  class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                </svg>
+
+                <p text="Linkedin " class="list-i flex-grow ">Linkedin</p>
               </div>
             </a>
 
             <a target="_blank" href="mailto: preysent@gmail.com">
-              <div class="border-b border-black p-1 overflow-hidden">
-                <p text="preysent@gmail.com" class="list-i"> mail </p>
+              <div class="border-b border-black p-1 overflow-hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 aspect-square" fill="currentColor"
+                  class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                </svg>
+                <p text="preysent@gmail.com" class="list-i flex-grow">mail</p>
               </div>
             </a>
 
-            <div class="border-b border-black p-1 overflow-hidden">
-              <p text="Discord " class="list-i">Discord</p>
-            </div>
 
-            <div class="border-b border-black p-1 overflow-hidden">
-              <p text="HitHub " class="list-i">HitHub</p>
-            </div>
+            <a target="_blank" href="https://t.me/+vgjvSQqoNp41MTQ1">
+              <div class="border-b border-black p-1 overflow-hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 aspect-square" fill="currentColor"
+                  class="bi bi-telegram" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+                </svg>
+                <p text="Telegram" class="list-i flex-grow">Telegram</p>
+              </div>
+            </a>
 
-            <div class="border-b border-black p-1 overflow-hidden">
-              <p text="Replit " class="list-i">Replit</p>
-            </div>
+
           </div>
 
 
@@ -375,9 +431,6 @@
 
 
   </div>
-
-
-
 
   <script type="module" src="/main.js"></script>
 </body>

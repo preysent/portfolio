@@ -4,7 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 
 
-// const loco = () => {
+const loco = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     const locoScroll = new LocomotiveScroll({
@@ -48,27 +48,51 @@ import ScrollTrigger from "gsap/ScrollTrigger";
     document.querySelector('nav').addEventListener('click', handleNav)
 
     document.querySelector('#go-home-btn').addEventListener('click', () => locoScroll.scrollTo(0))
+    document.querySelector('#scroll-down-btn').addEventListener('click', () => locoScroll.scrollTo("#projects"))
+    
 
-
-// }; loco();
+}; loco();
 
 const load = gsap.timeline()
 load.from(".loder-div", {
-    delay:.7,
-     yPercent:100,
-     stagger:.1
-    
-    })
-load.to("#loder",{
-    delay:.7,
-    duration:1,
-    yPercent:-110,
-    rotate:-5,
-    xPercent:-10,
-    opacity:0,
+    delay: .7,
+    yPercent: 100,
+    stagger: .1
 
 })
-load.from('#home h2',{
-    yPercent:100,
-    stagger:.1
+load.to("#loder", {
+    delay: .7,
+    duration: 1,
+    yPercent: -110,
+    rotate: -5,
+    xPercent: -10,
+    opacity: 0,
+
+})
+load.from('#home h2', {
+    yPercent: 100,
+    stagger: .1
+})
+
+// const main = document.querySelector('#main')
+// main.addEventListener('wheel',(e)=>{
+//     // console.log(e)
+// })
+
+const cursor = document.querySelectorAll('.cursor')
+const home = document.getElementById('home')
+const contact = document.getElementById('contact')
+
+const handleMouse = (e) => {
+    cursor.forEach((point, i) => {        
+        setTimeout(() => point.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`, i * 100)
+    })
+}
+
+home.addEventListener('mousemove', handleMouse)
+contact.addEventListener('mousemove', handleMouse)
+
+const projects = document.querySelectorAll('#projects a')
+projects.forEach((project)=>{
+    console.log(project)
 })
